@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+D:\bombi\java_data\.metadata\.plugins\org.eclipse.jdt.core
+3261068074.index
+2663481984.index
+10819363.index
+3922113046.index
+2007115701.index
+130601786.index
+2578204313.index
