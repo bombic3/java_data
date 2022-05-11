@@ -5,5 +5,4 @@ INDEX VERSION 1.131+D:\bombi\java_data\.metadata\.plugins\org.eclipse.jdt.core
 3922113046.index
 2007115701.index
 130601786.index
-2112246634.index
 2578204313.index
