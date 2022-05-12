@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hyndai.Engine"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hankook.SnowTire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.kumho.BigWidthTire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
     <fullyQualifiedTypeName name="sec12.exam03_import.kumho.Tire"/>
+    <fullyQualifiedTypeName name="p290_extends.CellPhone"/>
+    <fullyQualifiedTypeName name="p290_extends.DmbCellPhone"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="p294_super.People"/>
+    <fullyQualifiedTypeName name="p294_super.Student"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="p296_override.Calculator"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="p296_override.Computer"/>
 </qualifiedTypeNameHistroy>
