@@ -11,9 +11,14 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="p294_super.People"/>
     <fullyQualifiedTypeName name="p294_super.Student"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="p296_override.Calculator"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="p296_override.Computer"/>
+    <fullyQualifiedTypeName name="javax.swing.text.TabStop"/>
+    <fullyQualifiedTypeName name="p314_tireclass.Tire"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="p314_tireclass.Car"/>
+    <fullyQualifiedTypeName name="p314_tireclass.HankookTire"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
