@@ -12,8 +12,6 @@ package project01;
  *  사용자가 이름 / 사원번호를 입력 시 해당 객체를 돌려준다.
  */
 
-
-
 import java.util.Scanner;
 
 public class Administrator {	
