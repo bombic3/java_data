@@ -16,9 +16,17 @@
     <fullyQualifiedTypeName name="p296_override.Computer"/>
     <fullyQualifiedTypeName name="javax.swing.text.TabStop"/>
     <fullyQualifiedTypeName name="p314_tireclass.Tire"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="p314_tireclass.Car"/>
     <fullyQualifiedTypeName name="p314_tireclass.HankookTire"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.security.PrivilegedExceptionAction"/>
+    <fullyQualifiedTypeName name="p350_interface.Television"/>
+    <fullyQualifiedTypeName name="p350_interface.Audio"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="p361_interface_default.Television"/>
+    <fullyQualifiedTypeName name="p350_interface.RemoteControl"/>
+    <fullyQualifiedTypeName name="p350_interface.Searchable"/>
+    <fullyQualifiedTypeName name="p361_interface_default.RemoteControl"/>
 </qualifiedTypeNameHistroy>
