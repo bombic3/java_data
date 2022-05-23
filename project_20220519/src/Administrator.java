@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 public class Administrator {	
 	private Worker[] worker;
-	private PartTimer[] partTimer; 
+	private NonMember[] partTimer; 
 	
 	private int idx = 0;			//idx for worker
 	private int idx2 = 0;			//idx for part timer
@@ -28,7 +28,7 @@ public class Administrator {
 	//관리자 생성자 -> 사람을 50명까지 생성 가능하다. (has a)
 	public Administrator() {
 		worker = new Worker[50];
-		partTimer = new PartTimer[5];
+		partTimer = new NonMember[5];
 		
 		//Set the admin ID and PW
 		ID = "root";
@@ -61,7 +61,7 @@ public class Administrator {
 		return worker[num];
 	}
 	
-	public PartTimer getPartTimer(int num) {
+	public NonMember getPartTimer(int num) {
 		return partTimer[num];
 	}
 	
@@ -310,7 +310,7 @@ public class Administrator {
 			return;
 		}
 		System.out.println("비회원 추가!");
-		partTimer[idx2] = new PartTimer();
+		partTimer[idx2] = new NonMember();
 		Scanner sc = new Scanner(System.in);
 		partTimer[idx2].setRank("비회원");
 		//set the values of part timer

@@ -16,7 +16,7 @@ public class MainRun {
 	public void login() {
 		while(true) {
 			Scanner sc = new Scanner(System.in);
-			System.out.println("test 피트니스센터 회원 관리 포털에 오신 것을 환영합니다!");
+			System.out.println("test 피트니스센터 회원 수강료 관리 포털에 오신 것을 환영합니다!");
 			System.out.println("로그인을 통하여 정보를 조회하실 수 있습니다.");
 			System.out.println("직원은 이름을 ID로 사원번호를 비밀번호(숫자)로 사용합니다.");
 			System.out.println("ID에 0을 입력 시 프로그램을 종료합니다.");

@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class User {
 	private People people;
 	private Worker worker;
-	private PartTimer partTimer;
+	private NonMember partTimer;
 	
 	public User(Worker worker) {
 		this.worker = worker;
@@ -20,7 +20,7 @@ public class User {
 		partTimer = null;
 	}
 	
-	public User(PartTimer partTimer) {
+	public User(NonMember partTimer) {
 		this.partTimer = partTimer;
 		people = partTimer;
 		worker = null;
