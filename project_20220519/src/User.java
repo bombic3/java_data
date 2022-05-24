@@ -5,64 +5,65 @@
  * 정보 조회 및 제한적 수정이 가능하다.
  */
 
+//희인
 
 
 import java.util.Scanner;
 
 public class User {
 	private People people;
-	private Worker worker;
-	private NonMember partTimer;
+	private Member member;
+	private NonMember nonMember;
 	
-	public User(Worker worker) {
-		this.worker = worker;
-		people = worker;
-		partTimer = null;
+	public User(Member member) {
+		this.member = member;
+		people = member;
+		nonMember = null;
 	}
 	
-	public User(NonMember partTimer) {
-		this.partTimer = partTimer;
-		people = partTimer;
-		worker = null;
+	public User(NonMember nonMember) {
+		this.nonMember = nonMember;
+		people = nonMember;
+		member = null;
 	}
 	
 	public void print() {
-		if(worker != null) {
-			System.out.println("이름\t : "+worker.getName());
-			System.out.println("회원번호\t : "+worker.getPeople_id());
-			System.out.println("연락처\t : "+worker.getPhone_number());
-			System.out.println("생일\t : "+worker.getBirthday());
-			System.out.println("이메일\t : "+worker.getEmail());
-			System.out.println("주소\t : "+worker.getAddress());
-			System.out.println("수강반 이름\t : "+worker.getDepartmentName());
-			System.out.println("수강반 번호\t : "+worker.getDepartmentCode());
-			System.out.println("회원등급\t : "+worker.getRank());
-			System.out.println("등록날짜\t : "+worker.getStart());
-			System.out.println("계좌번호\t : "+worker.getAccountNumber());
-			System.out.println("계좌은행\t : "+worker.getAccountName());
-			System.out.println("계좌예금주\t : "+worker.getAccountOwner());
-			System.out.println("총 수강료\t : "+worker.getTotal());
-			System.out.println("할인금\t : "+worker.getTax());
-			System.out.println("실 수강료\t : "+worker.getRealPay());
+		if(member != null) {
+			System.out.println("이름\t : "+member.getName());
+			System.out.println("회원번호\t : "+member.getPeople_id());
+			System.out.println("연락처\t : "+member.getPhone_number());
+			System.out.println("생일\t : "+member.getBirthday());
+			System.out.println("이메일\t : "+member.getEmail());
+			System.out.println("주소\t : "+member.getAddress());
+			System.out.println("수강반 이름\t : "+member.getDepartmentName());
+			System.out.println("수강반 번호\t : "+member.getDepartmentCode());
+			System.out.println("회원등급\t : "+member.getMembership());
+			System.out.println("등록날짜\t : "+member.getStart());
+			System.out.println("계좌번호\t : "+member.getAccountNumber());
+			System.out.println("계좌은행\t : "+member.getAccountName());
+			System.out.println("계좌예금주\t : "+member.getAccountOwner());
+			System.out.println("총 수강비\t : "+member.getTotal());
+			System.out.println("부가세\t : "+member.getSurtax());
+			System.out.println("실 수강비\t : "+member.getRealTui());
 			System.out.println();
 		}
 		else {
-			System.out.println("이름\t : "+partTimer.getName());
-			System.out.println("회원번호\t : "+partTimer.getPeople_id());
-			System.out.println("연락처\t : "+partTimer.getPhone_number());
-			System.out.println("생일\t : "+partTimer.getBirthday());
-			System.out.println("이메일\t : "+partTimer.getEmail());
-			System.out.println("주소\t : "+partTimer.getAddress());
-			System.out.println("수강반 이름\t : "+partTimer.getDepartmentName());
-			System.out.println("수강실 번호\t : "+partTimer.getDepartmentCode());
-			System.out.println("회원번호\t : "+partTimer.getRank());
-			System.out.println("등록날짜\t : "+partTimer.getStart());
-			System.out.println("계좌번호\t : "+partTimer.getAccountNumber());
-			System.out.println("계좌은행\t : "+partTimer.getAccountName());
-			System.out.println("계좌예금주\t : "+partTimer.getAccountOwner());
-			System.out.println("총 수강료\t : "+partTimer.getTotalPay());
-			System.out.println("할인금\t : "+partTimer.getTax());
-			System.out.println("실 수강료\t : "+partTimer.getRealPay());
+			System.out.println("이름\t : "+nonMember.getName());
+			System.out.println("회원번호\t : "+nonMember.getPeople_id());
+			System.out.println("연락처\t : "+nonMember.getPhone_number());
+			System.out.println("생일\t : "+nonMember.getBirthday());
+			System.out.println("이메일\t : "+nonMember.getEmail());
+			System.out.println("주소\t : "+nonMember.getAddress());
+			System.out.println("수강반 이름\t : "+nonMember.getDepartmentName());
+			System.out.println("수강실 번호\t : "+nonMember.getDepartmentCode());
+			System.out.println("회원번호\t : "+nonMember.getMembership());
+			System.out.println("등록날짜\t : "+nonMember.getStart());
+			System.out.println("계좌번호\t : "+nonMember.getAccountNumber());
+			System.out.println("계좌은행\t : "+nonMember.getAccountName());
+			System.out.println("계좌예금주\t : "+nonMember.getAccountOwner());
+			System.out.println("총 수강비\t : "+nonMember.getTotalTui());
+			System.out.println("할인액\t : "+nonMember.getSurtax());
+			System.out.println("실 수강비\t : "+nonMember.getRealTui());
 			System.out.println();
 		}
 	}

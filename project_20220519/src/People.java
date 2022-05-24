@@ -1,7 +1,7 @@
 /*
- * 직원 클래스
+ * 회원 관리 (정회원, 비회원)
  * 이름
- * 직급
+ * 회원등급
  * 생년월일
  * 등등..
  */
@@ -10,31 +10,31 @@
 
 public class People {
 
-	private String name;					//이름
-	private String rank;					//직급
-	private int birthday;					//생일
-	private int people_id;					//회원번호
-	private int start;						//등록날짜
+	private String name;					     //이름
+	private String membership;				 //회원등급
+	private int birthday;					     //생일
+	private int people_id;					   //회원번호
+	private int start;						     //등록날짜
 	private People_Department department;	//수강반 이름
 	
 	//사용자가 수정 가능한 정보
-	private int phone_number;				//전화번호
-	private String email;					//email
-	private String address;					//주소
-	private People_Account account;			//계좌
+	private int phone_number;				  //전화번호
+	private String email;					    //email
+	private String address;					  //주소
+	private People_Account account;		//계좌
 	
-	float pay;								//지급액
-	float serverence_pay;					//퇴직금
+	float tui;								        //수강비
+	float serverence_pay;					    //퇴직금...?
 	
 	public People() {
 		department = new People_Department();
 		account = new People_Account();
 	}
 	
-	public void setPeople(String name, String rank, int birthday, int start, int department_code, String department_name, 
+	public void setPeople(String name, String membership, int birthday, int start, int department_code, String department_name, 
 			int phone_number, int people_id, String email, String address, String account_name, String account_number, String account_owner) {
 		this.setName(name);
-		this.setRank(rank);
+		this.setMembership(membership);
 		this.setBirthday(birthday);
 		this.setStart(start);
 		department = new People_Department(department_code, department_name);
@@ -53,12 +53,12 @@ public class People {
 		this.name = name;
 	}
 
-	public String getRank() {
-		return rank;
+	public String getMembership() {
+		return membership;
 	}
 
-	public void setRank(String rank) {
-		this.rank = rank;
+	public void setMembership(String membership) {
+		this.membership = membership;
 	}
 
 	public String getEmail() {

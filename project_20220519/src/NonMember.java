@@ -34,7 +34,7 @@ public class NonMember extends People{
 		this.workoutTime = workoutTime;
 	}
 	
-	public void setOveroutTime(int overTime) {
+	public void setOverTime(int overTime) {
 		this.overTime = overTime;
 	}
 	
@@ -64,12 +64,12 @@ public class NonMember extends People{
 		return Math.round(surtax);
 	}
 	
-	public void setRealPay() {
+	public void setRealTui() {
 		realTui = totalTui + surtax;
 	}
 	
-	public double getRealPay() {
-		setRealPay();
+	public double getRealTui() {
+		setRealTui();
 		return realTui;
 	}
 	

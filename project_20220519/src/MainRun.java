@@ -1,4 +1,4 @@
-
+//희인
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class MainRun {
 	public void login() {
 		while(true) {
 			Scanner sc = new Scanner(System.in);
-			System.out.println("test 피트니스센터 회원 수강료 관리 포털에 오신 것을 환영합니다!");
+			System.out.println("test 피트니스센터 회원 관리 포털에 오신 것을 환영합니다!");
 			System.out.println("로그인을 통하여 정보를 조회하실 수 있습니다.");
 			System.out.println("직원은 이름을 ID로 사원번호를 비밀번호(숫자)로 사용합니다.");
 			System.out.println("ID에 0을 입력 시 프로그램을 종료합니다.");
@@ -38,11 +38,11 @@ public class MainRun {
 				this.adminRun();
 			}
 			else if(result >= 0 && result < 50) {
-				user = new User(administrator.getWorker(result));
+				user = new User(administrator.getMember(result));
 				this.userRun();
 			}
 			else if(result >= 50 && result < 55) {
-				user = new User(administrator.getPartTimer(result-50));
+				user = new User(administrator.getNonMember(result-50));
 				this.userRun();
 			}
 			else {
@@ -85,19 +85,19 @@ public class MainRun {
 					System.out.println("1.회원추가 2.전체조회 3.검색 4.수정 5.삭제 6.종료");
 					choice = sc.nextInt();
 					if(choice==1) {
-						administrator.addWorker();
+						administrator.addMember();
 					}
 					else if(choice==2) {
-						administrator.printWorker();
+						administrator.printMember();
 					}
 					else if(choice==3) {
-						administrator.searchWorker();
+						administrator.searchMember();
 					}
 					else if(choice==4) {
-						administrator.editWorker();
+						administrator.editMember();
 					}
 					else if(choice==5) {
-						administrator.deleteWorker();
+						administrator.deleteMember();
 					}
 					else if(choice==6) {
 						break;
@@ -112,20 +112,20 @@ public class MainRun {
 					System.out.println("1.회원추가 2.전체조회 3.검색 4.수정 5.삭제 6.종료");
 					choice = sc.nextInt();
 					if(choice==1) {
-						administrator.addPartTimer();
+						administrator.addNonMember();
 					}
 					else if(choice==2) {
-						administrator.printPartTimer();
+						administrator.printNonMember();
 					}
 					else if(choice==3) {
 						
-						administrator.searchPartTimer();
+						administrator.searchNonMember();
 					}
 					else if(choice==4) {
-						administrator.editPartTimer();
+						administrator.editNonMember();
 					}
 					else if(choice==5) {
-						administrator.deletePartTimer();
+						administrator.deleteNonMember();
 					}
 					else if(choice==6) {
 						break;
