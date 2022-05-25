@@ -42,7 +42,7 @@ public class Member extends People{
 		return baseTui;
 	}
 
-	// 인센티브 = 기본급*퍼센트  알바 0% 사원 15%   대리 30%    과장 40%   차장 50%   부장 60%
+	// 등급별 추가 수강료 = 기본급*퍼센트  알바 0% 사원 15%   대리 30%    과장 40%   차장 50%   부장 60%
 	public void setGradeTui() { 
 		String position = super.getMembership(); //getPosition() 직책 받아오기\
 		switch(position) {
