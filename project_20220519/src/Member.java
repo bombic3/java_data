@@ -1,9 +1,3 @@
-/*
- * 직원 클래스
- */
-
-
-
 public class Member extends People{
 	private double baseTui; //기본급(월급) -> 월수강비
 	private double gradeTui; // 직급 별 인센티브 -> 회원등급별 포인트
@@ -70,12 +64,12 @@ public class Member extends People{
 		}
 	}
 
-	public double getGradeTui() {
-		return gradeTui;
-	}
+//	public double getGradeTui() {
+//		return gradeTui;
+//	}
 
 	//추가 근무 시급 설정
-	public void sethourTui() {
+//	public void sethourTui() {
 //		String position = super.getRank(); //getPosition() 직책 받아오기\
 //		switch(position) {
 //		case "알바":
@@ -100,11 +94,11 @@ public class Member extends People{
 //			System.out.println("잘못 입력하셨습니다.");
 //			break;
 //		}
-	}
+//	}
 
-	public double gethourTui() {
-		return hourTui;
-	}
+//	public double gethourTui() {
+//		return hourTui;
+//	}
 
 	//야간근무는 초과근무 시급의 1.5배
 	public void setNightTui(double hourTui) {
@@ -128,9 +122,9 @@ public class Member extends People{
 	//실질적으로 최종 급여를 계산해주는 부분
 	public double getRealTui() {
 		this.setBaseTui(baseTui);
-		this.setGradeTui();
+//		this.setGradeTui();
 		this.setNightTui(hourTui);
-		this.sethourTui();
+//		this.sethourTui();
 		
 		this.realTui = totalTui + surtax;
 		return realTui;
@@ -176,4 +170,3 @@ public class Member extends People{
 	}
 
 }
-

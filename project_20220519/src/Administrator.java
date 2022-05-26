@@ -201,7 +201,7 @@ public class Administrator {
 			if(member[i].getName().equals(name) && member[i].getPeople_id() == member_id) {
 				while(true) {
 					System.out.println("무엇을 수정하시겠습니까?");
-					System.out.println("1.이름 2.회원번호 3.연락처 4.생일 5.이메일 6.주소 7.수강반  이름 "
+					System.out.println("1.이름 2.회원번호 3.연락처 4.생일 5.이메일 6.주소 7.수강반 이름 "
 							+ "8.수강실 번호 9.회원등급 10.등록날짜 11.계좌번호 12.계좌은행 13.계좌예금주 14.종료");
 					int choice = sc.nextInt();
 					String str_temp;

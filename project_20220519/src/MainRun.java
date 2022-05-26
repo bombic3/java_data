@@ -1,5 +1,3 @@
-//»Ò¿Œ
-
 import java.util.*;
 
 

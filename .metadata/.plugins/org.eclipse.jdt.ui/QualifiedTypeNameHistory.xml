@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.hyndai.Engine"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.hankook.SnowTire"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.kumho.BigWidthTire"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.hankook.Tire"/>
-    <fullyQualifiedTypeName name="sec12.exam03_import.kumho.Tire"/>
-    <fullyQualifiedTypeName name="p290_extends.CellPhone"/>
-    <fullyQualifiedTypeName name="p290_extends.DmbCellPhone"/>
-    <fullyQualifiedTypeName name="p294_super.People"/>
-    <fullyQualifiedTypeName name="p294_super.Student"/>
-    <fullyQualifiedTypeName name="p296_override.Calculator"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="p296_override.Computer"/>
     <fullyQualifiedTypeName name="javax.swing.text.TabStop"/>
     <fullyQualifiedTypeName name="p314_tireclass.Tire"/>
     <fullyQualifiedTypeName name="p314_tireclass.Car"/>
     <fullyQualifiedTypeName name="p314_tireclass.HankookTire"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.security.PrivilegedExceptionAction"/>
     <fullyQualifiedTypeName name="p350_interface.Television"/>
     <fullyQualifiedTypeName name="p350_interface.Audio"/>
@@ -29,7 +17,6 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="p367_interface_car.HankookTire"/>
     <fullyQualifiedTypeName name="p367_interface_car.KumhoTire"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="javax.naming.StringRefAddr"/>
@@ -52,9 +39,25 @@
     <fullyQualifiedTypeName name="p1027_filewriter.FileWriteExample"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="test.Score"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="training_class.Human"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="p659_genericclass.Product"/>
+    <fullyQualifiedTypeName name="p661_genericmethod.Util"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="p658_generic.Box"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="p666_generic_wildcard.Studeont"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="p666_generic_wildcard.Person"/>
+    <fullyQualifiedTypeName name="p666_generic_wildcard.Worker"/>
+    <fullyQualifiedTypeName name="p666_generic_wildcard.Student"/>
+    <fullyQualifiedTypeName name="p666_generic_wildcard.Course"/>
+    <fullyQualifiedTypeName name="p666_generic_wildcard.HighStudent"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="human_array.HumanArrayTester"/>
+    <fullyQualifiedTypeName name="human1.Human"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="human2.Human"/>
+    <fullyQualifiedTypeName name="car_day.Day"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
