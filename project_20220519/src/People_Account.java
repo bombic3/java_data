@@ -2,8 +2,6 @@
  * 인적사항 내에 존재하는 계좌 클래스
  */
 
-//희인
-
 public class People_Account {
 	private String bank_name;		//은행 이름
 	private String account_number;	//계좌번호

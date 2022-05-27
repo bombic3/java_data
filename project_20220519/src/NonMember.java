@@ -5,15 +5,15 @@
 
 
 public class NonMember extends People{
-	private int hourTui;		//시급 -> 시간당 수강비
-	private int workoutTime;		//근무시간 -> 운동시간
-	private int overTime;		//초과 근무시간 -> 초과 운동시간
-	private int nightTime;		//야간 초과 근무시간 -> 야간 초과 운동시간
+	private int hourTui;		// 시간당 수강비
+	private int workoutTime;	// 운동시간
+	private int overTime;		// 초과 운동시간
+	private int nightTime;		// 개인실이용 운동시간
 	
-	private int holidayTui;		//주휴수당 -> 주휴수당몰라
-	private double totalTui;	//총 급여 -> 총 수강비
-	private double surtax;			//세금 -> 부가세 10%
-	private double realTui;		//실수령액 -> 실 수강비
+	private int holidayTui;		// 주말이용 수강료
+	private double totalTui;	// 총 수강비
+	private double surtax;		// 부가세 10%
+	private double realTui;		// 실 수강비
 	
 	public NonMember() {
 		

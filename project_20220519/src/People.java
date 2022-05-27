@@ -1,7 +1,7 @@
 /*
  * 회원 관리 (정회원, 비회원)
  * 이름
- * 회원등급
+ * 수강시간 및 강사레벨
  * 생년월일
  * 등등..
  */
@@ -10,21 +10,20 @@
 
 public class People {
 
-	private String name;					     //이름
+	private String name;					 //이름
 	private String membership;				 //회원등급
-	private int birthday;					     //생일
-	private int people_id;					   //회원번호
-	private int start;						     //등록날짜
-	private People_Department department;	//수강반 이름
+	private int birthday;					 //생일
+	private int people_id;					 //회원번호
+	private int start;						 //등록날짜
+	private People_Department department;	 //수강반 이름
 	
 	//사용자가 수정 가능한 정보
-	private int phone_number;				  //전화번호
-	private String email;					    //email
-	private String address;					  //주소
-	private People_Account account;		//계좌
+	private int phone_number;				 //전화번호
+	private String email;					 //email
+	private String address;					 //주소
+	private People_Account account;			 //계좌
 	
-	float tui;								        //수강비
-	float serverence_pay;					    //퇴직금...?
+	float tui;								 //수강비
 	
 	public People() {
 		department = new People_Department();

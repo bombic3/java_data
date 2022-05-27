@@ -29,41 +29,41 @@ public class User {
 	
 	public void print() {
 		if(member != null) {
-			System.out.println("이름\t : "+member.getName());
-			System.out.println("회원번호\t : "+member.getPeople_id());
-			System.out.println("연락처\t : "+member.getPhone_number());
-			System.out.println("생일\t : "+member.getBirthday());
-			System.out.println("이메일\t : "+member.getEmail());
-			System.out.println("주소\t : "+member.getAddress());
-			System.out.println("수강반 이름\t : "+member.getDepartmentName());
-			System.out.println("수강반 번호\t : "+member.getDepartmentCode());
-			System.out.println("회원등급\t : "+member.getMembership());
-			System.out.println("등록날짜\t : "+member.getStart());
-			System.out.println("계좌번호\t : "+member.getAccountNumber());
-			System.out.println("계좌은행\t : "+member.getAccountName());
-			System.out.println("계좌예금주\t : "+member.getAccountOwner());
-			System.out.println("총 수강비\t : "+member.getTotal());
-			System.out.println("부가세\t : "+member.getSurtax());
-			System.out.println("실 수강비\t : "+member.getRealTui());
+			System.out.println("이름\t : " + member.getName());
+			System.out.println("회원번호\t : " + member.getPeople_id());
+			System.out.println("연락처\t : " + member.getPhone_number());
+			System.out.println("생일\t : " + member.getBirthday());
+			System.out.println("이메일\t : " + member.getEmail());
+			System.out.println("주소\t : " + member.getAddress());
+			System.out.println("수강반 이름\t : " + member.getDepartmentName());
+			System.out.println("수강반 번호\t : " + member.getDepartmentCode());
+			System.out.println("수강시간 및 강사레벨\t : " + member.getMembership());
+			System.out.println("등록날짜\t : " + member.getStart());
+			System.out.println("계좌번호\t : " + member.getAccountNumber());
+			System.out.println("계좌은행\t : " + member.getAccountName());
+			System.out.println("계좌예금주\t : " + member.getAccountOwner());
+			System.out.println("총 수강비\t : " + member.getTotal());
+			System.out.println("부가세\t : " + member.getSurtax());
+			System.out.println("실 수강비\t : " + member.getRealTui());
 			System.out.println();
 		}
 		else {
-			System.out.println("이름\t : "+nonMember.getName());
-			System.out.println("회원번호\t : "+nonMember.getPeople_id());
-			System.out.println("연락처\t : "+nonMember.getPhone_number());
-			System.out.println("생일\t : "+nonMember.getBirthday());
-			System.out.println("이메일\t : "+nonMember.getEmail());
-			System.out.println("주소\t : "+nonMember.getAddress());
-			System.out.println("수강반 이름\t : "+nonMember.getDepartmentName());
-			System.out.println("수강실 번호\t : "+nonMember.getDepartmentCode());
-			System.out.println("회원번호\t : "+nonMember.getMembership());
-			System.out.println("등록날짜\t : "+nonMember.getStart());
-			System.out.println("계좌번호\t : "+nonMember.getAccountNumber());
-			System.out.println("계좌은행\t : "+nonMember.getAccountName());
-			System.out.println("계좌예금주\t : "+nonMember.getAccountOwner());
-			System.out.println("총 수강비\t : "+nonMember.getTotalTui());
-			System.out.println("할인액\t : "+nonMember.getSurtax());
-			System.out.println("실 수강비\t : "+nonMember.getRealTui());
+			System.out.println("이름\t : " + nonMember.getName());
+			System.out.println("회원번호\t : " + nonMember.getPeople_id());
+			System.out.println("연락처\t : " + nonMember.getPhone_number());
+			System.out.println("생일\t : " + nonMember.getBirthday());
+			System.out.println("이메일\t : " + nonMember.getEmail());
+			System.out.println("주소\t : " + nonMember.getAddress());
+			System.out.println("수강반 이름\t : " + nonMember.getDepartmentName());
+			System.out.println("수강실 번호\t : " + nonMember.getDepartmentCode());
+			System.out.println("회원번호\t : " + nonMember.getMembership());
+			System.out.println("등록날짜\t : " + nonMember.getStart());
+			System.out.println("계좌번호\t : " + nonMember.getAccountNumber());
+			System.out.println("계좌은행\t : " + nonMember.getAccountName());
+			System.out.println("계좌예금주\t : " + nonMember.getAccountOwner());
+			System.out.println("총 수강비\t : " + nonMember.getTotalTui());
+			System.out.println("할인액\t : " + nonMember.getSurtax());
+			System.out.println("실 수강비\t : " + nonMember.getRealTui());
 			System.out.println();
 		}
 	}

@@ -18,7 +18,7 @@ public class Administrator {
 	private NonMember[] nonMember; 
 	
 	private int idx = 0;			//idx for member
-	private int idx2 = 0;			//idx for non member
+	private int idx2 = 0;			//idx for nonmember
 	
 	//Admin's ID and PW for manage the whole system
 	private String ID;
@@ -78,27 +78,27 @@ public class Administrator {
 		String name = sc.next();
 		String membership = null;
 		while(true) {
-			System.out.println("1.초급 A반(오전) 2.초급 B반(오후) 3.중급 A반(오전) 4.중급 B반(오후) 5.고급 A반(오전)");
-			System.out.print("회원등급 : ");
+			System.out.println("1.초급강사 평일오전 | 2.중급강사 평일오전 | 3.중급강사 평일오후 | 4.고급강사 평일오후 | 5.고급강사 주말반");
+			System.out.print("수강시간 및 강사레벨 : ");
 			int c = sc.nextInt();
 			if(c==1) {
-				membership = "초급 A반(오전)";
+				membership = "초급강사 평일오전";
 				break;
 			}
 			else if(c==2) {
-				membership = "초급 B반(오후)";
+				membership = "중급강사 평일오전";
 				break;
 			}
 			else if(c==3) {
-				membership = "중급 A반(오전)";
+				membership = "중급강사 평일오후";
 				break;
 			}
 			else if(c==4) {
-				membership = "중급 B반(오후)";
+				membership = "고급강사 평일오후";
 				break;
 			}
 			else if(c==5) {
-				membership = "고급 A반(오전)";
+				membership = "고급강사 주말반";
 				break;
 			}
 			System.out.println("잘못 된 회원등급입니다!");
@@ -125,13 +125,13 @@ public class Administrator {
 		String account_number = sc.next();
 		System.out.print("계좌 예금주 : ");
 		String account_owner = sc.next();
-		System.out.print("수강비 : ");
+		System.out.print("월 수강비 : ");
 		int tui = sc.nextInt();
-		System.out.print("초과 수강비 : ");
+		System.out.print("시간당 초과 수강비 : ");
 		int hourTui = sc.nextInt();
 		System.out.print("초과 운동시간 : ");
 		int overTime = sc.nextInt();
-		System.out.print("초과 야간 운동시간 : ");
+		System.out.print("개인운동실 이용시간 : ");
 		int nightTime = sc.nextInt();
 		member[idx++] = new Member(name, membership, birthday, start, department_code, department_name, 
 				phone_number, member_id, email, address, account_name, account_number, account_owner, tui, hourTui, overTime, nightTime);
@@ -148,13 +148,13 @@ public class Administrator {
 			System.out.println("주소\t : "+member[i].getAddress());
 			System.out.println("수강반 이름\t : "+member[i].getDepartmentName());
 			System.out.println("수강실 번호\t : "+member[i].getDepartmentCode());
-			System.out.println("회원등급\t : "+member[i].getMembership());
+			System.out.println("수강시간 및 강사레벨\t : "+member[i].getMembership());
 			System.out.println("등록날짜\t : "+member[i].getStart());
 			System.out.println("계좌번호\t : "+member[i].getAccountNumber());
 			System.out.println("계좌은행\t : "+member[i].getAccountName());
 			System.out.println("계좌예금주\t : "+member[i].getAccountOwner());
 			System.out.println("총수강비\t : "+member[i].getTotal());
-			System.out.println("할인금\t : "+member[i].getSurtax());
+			System.out.println("부가세\t : "+member[i].getSurtax());
 			System.out.println("실수강비\t : "+member[i].getRealTui());
 		}
 		System.out.println();
@@ -176,13 +176,13 @@ public class Administrator {
 				System.out.println("주소\t : "+member[i].getAddress());
 				System.out.println("수강반 이름\t : "+member[i].getDepartmentName());
 				System.out.println("수강실 번호\t : "+member[i].getDepartmentCode());
-				System.out.println("회원등급\t : "+member[i].getMembership());
+				System.out.println("수강시간 및 강사레벨\t : "+member[i].getMembership());
 				System.out.println("등록날짜\t : "+member[i].getStart());
 				System.out.println("계좌번호\t : "+member[i].getAccountNumber());
 				System.out.println("계좌은행\t : "+member[i].getAccountName());
 				System.out.println("계좌예금주\t : "+member[i].getAccountOwner());
 				System.out.println("총수강비\t : "+member[i].getTotal());
-				System.out.println("총수강비\t : "+member[i].getSurtax());
+				System.out.println("부가세\t : "+member[i].getSurtax());
 				System.out.println("실수강비\t : "+member[i].getRealTui());
 				System.out.println();
 				return;
@@ -202,7 +202,7 @@ public class Administrator {
 				while(true) {
 					System.out.println("무엇을 수정하시겠습니까?");
 					System.out.println("1.이름 2.회원번호 3.연락처 4.생일 5.이메일 6.주소 7.수강반 이름 "
-							+ "8.수강실 번호 9.회원등급 10.등록날짜 11.계좌번호 12.계좌은행 13.계좌예금주 14.종료");
+							+ "8.수강실 번호 9.수강시간 및 강사레벨 10.등록날짜 11.계좌번호 12.계좌은행 13.계좌예금주 14.종료");
 					int choice = sc.nextInt();
 					String str_temp;
 					int int_temp;
@@ -302,7 +302,7 @@ public class Administrator {
 	
 	//NonMember Class 제어
 	
-	//administrator is adding the non member
+	//administrator is adding the nonmember
 	void addNonMember() {
 		if(idx2>5) {
 			System.out.println("5명까지만 생성 가능합니다.");
@@ -312,7 +312,7 @@ public class Administrator {
 		nonMember[idx2] = new NonMember();
 		Scanner sc = new Scanner(System.in);
 		nonMember[idx2].setMembership("비회원");
-		//set the values of non member
+		//set the values of nonmember
 		System.out.print("이름 : ");
 		nonMember[idx2].setName(sc.next());
 		System.out.print("생일 : ");
@@ -343,7 +343,7 @@ public class Administrator {
 		nonMember[idx2].setWorkoutTime(sc.nextInt());
 		System.out.print("초과 운동시간 : ");
 		nonMember[idx2].setOverTime(sc.nextInt());
-		System.out.print("초과 야간 운동시간 : ");
+		System.out.print("개인운동실 이용시간 : ");
 		nonMember[idx2].setNightTime(sc.nextInt());
 		idx2++;
 	}
@@ -351,22 +351,22 @@ public class Administrator {
 	//print all of the non member
 	void printNonMember() {
 		for(int i=0 ; i<idx2 ; i++) {
-			System.out.println("이름\t : "+nonMember[i].getName());
-			System.out.println("회원번호\t : "+nonMember[i].getPeople_id());
-			System.out.println("연락처\t : "+nonMember[i].getPhone_number());
-			System.out.println("생일\t : "+nonMember[i].getBirthday());
-			System.out.println("이메일\t : "+nonMember[i].getEmail());
-			System.out.println("주소\t : "+nonMember[i].getAddress());
-			System.out.println("수강반 이름\t : "+nonMember[i].getDepartmentName());
-			System.out.println("수강실 번호\t : "+nonMember[i].getDepartmentCode());
-			System.out.println("회원등급\t : "+nonMember[i].getMembership());
-			System.out.println("등록날짜\t : "+nonMember[i].getStart());
-			System.out.println("계좌번호\t : "+nonMember[i].getAccountNumber());
-			System.out.println("계좌은행\t : "+nonMember[i].getAccountName());
-			System.out.println("계좌예금주\t : "+nonMember[i].getAccountOwner());
-			System.out.println("총수강비\t : "+nonMember[i].getTotalTui());
-			System.out.println("부가세\t : "+nonMember[i].getSurtax());
-			System.out.println("실수강비\t : "+nonMember[i].getRealTui());
+			System.out.println("이름\t : " + nonMember[i].getName());
+			System.out.println("회원번호\t : " + nonMember[i].getPeople_id());
+			System.out.println("연락처\t : " + nonMember[i].getPhone_number());
+			System.out.println("생일\t : " + nonMember[i].getBirthday());
+			System.out.println("이메일\t : " + nonMember[i].getEmail());
+			System.out.println("주소\t : " + nonMember[i].getAddress());
+			System.out.println("수강반 이름\t : " + nonMember[i].getDepartmentName());
+			System.out.println("수강실 번호\t : " + nonMember[i].getDepartmentCode());
+			System.out.println("수강시간 및 강사레벨\t : " + nonMember[i].getMembership());
+			System.out.println("등록날짜\t : " + nonMember[i].getStart());
+			System.out.println("계좌번호\t : " + nonMember[i].getAccountNumber());
+			System.out.println("계좌은행\t : " + nonMember[i].getAccountName());
+			System.out.println("계좌예금주\t : " + nonMember[i].getAccountOwner());
+			System.out.println("총수강비\t : " + nonMember[i].getTotalTui());
+			System.out.println("부가세\t : " + nonMember[i].getSurtax());
+			System.out.println("실수강비\t : " + nonMember[i].getRealTui());
 			System.out.println();
 		}
 	}
@@ -380,22 +380,22 @@ public class Administrator {
 		
 		for(int i=0 ; i<idx2 ; i++) {
 			if(nonMember[i].getName().equals(name) && nonMember[i].getPeople_id() == people_id) {
-				System.out.println("이름\t : "+nonMember[i].getName());
-				System.out.println("회원번호\t : "+nonMember[i].getPeople_id());
-				System.out.println("연락처\t : "+nonMember[i].getPhone_number());
-				System.out.println("생일\t : "+nonMember[i].getBirthday());
-				System.out.println("이메일\t : "+nonMember[i].getEmail());
-				System.out.println("주소\t : "+nonMember[i].getAddress());
-				System.out.println("수강반 이름\t : "+nonMember[i].getDepartmentName());
-				System.out.println("수강실 번호\t : "+nonMember[i].getDepartmentCode());
-				System.out.println("회원등급\t : "+nonMember[i].getMembership());
-				System.out.println("등록날짜\t : "+nonMember[i].getStart());
-				System.out.println("계좌번호\t : "+nonMember[i].getAccountNumber());
-				System.out.println("계좌은행\t : "+nonMember[i].getAccountName());
-				System.out.println("계좌예금주\t : "+nonMember[i].getAccountOwner());
-				System.out.println("총수강비\t : "+nonMember[i].getTotalTui());
-				System.out.println("부가세\t : "+nonMember[i].getSurtax());
-				System.out.println("실수강비\t : "+nonMember[i].getRealTui());
+				System.out.println("이름\t : " + nonMember[i].getName());
+				System.out.println("회원번호\t : " + nonMember[i].getPeople_id());
+				System.out.println("연락처\t : " + nonMember[i].getPhone_number());
+				System.out.println("생일\t : " + nonMember[i].getBirthday());
+				System.out.println("이메일\t : " + nonMember[i].getEmail());
+				System.out.println("주소\t : " + nonMember[i].getAddress());
+				System.out.println("수강반 이름\t : " + nonMember[i].getDepartmentName());
+				System.out.println("수강실 번호\t : " + nonMember[i].getDepartmentCode());
+				System.out.println("수강시간 및 강사레벨\t : " + nonMember[i].getMembership());
+				System.out.println("등록날짜\t : " + nonMember[i].getStart());
+				System.out.println("계좌번호\t : " + nonMember[i].getAccountNumber());
+				System.out.println("계좌은행\t : " + nonMember[i].getAccountName());
+				System.out.println("계좌예금주\t : " + nonMember[i].getAccountOwner());
+				System.out.println("총수강비\t : " + nonMember[i].getTotalTui());
+				System.out.println("부가세\t : " + nonMember[i].getSurtax());
+				System.out.println("실수강비\t : " + nonMember[i].getRealTui());
 				System.out.println();
 				return;
 			}
@@ -416,7 +416,7 @@ public class Administrator {
 					System.out.println("무엇을 수정하시겠습니까?");
 					System.out.println("1.이름 2.회원번호 3.연락처 4.생일 5.이메일 6.주소 7.수강반 이름 "
 							+ "8.수강반 번호 9.시간당 수강료 10.등록일 11.계좌번호 12.계좌은행 13.계좌예금주 "
-							+ "14.운동시간 15.초과운동시간 16.초과야간운동시간 17.종료");
+							+ "14.운동시간 15.초과운동시간 16.개인운동실 이용시간 17.종료");
 					int choice = sc.nextInt();
 					String str_temp;
 					int int_temp;

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="p296_override.Computer"/>
-    <fullyQualifiedTypeName name="javax.swing.text.TabStop"/>
     <fullyQualifiedTypeName name="p314_tireclass.Tire"/>
     <fullyQualifiedTypeName name="p314_tireclass.Car"/>
     <fullyQualifiedTypeName name="p314_tireclass.HankookTire"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="human2.Human"/>
     <fullyQualifiedTypeName name="car_day.Day"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="ex05.MyFunctionlInterfaceExample"/>
+    <fullyQualifiedTypeName name="p683.MyFunctionalInterface"/>
+    <fullyQualifiedTypeName name="id.Id"/>
 </qualifiedTypeNameHistroy>
