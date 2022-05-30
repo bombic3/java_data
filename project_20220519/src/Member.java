@@ -68,26 +68,26 @@ public class Member extends People{
 		return gradeTui;
 	}
 
-	// 개인 운동실 이용 수강료 설정
+	// 초과 수강료 설정
 	public void sethourTui() {
 		String position = super.getMembership(); //getMembership() 강사등급 받아오기
 		switch(position) {
-		case "알바":
+		case "비회원":
 			this.hourTui = 8500;
 			break;
-		case "사원":
+		case "초급강사 평일오전":
 			this.hourTui = 8500 * 1.5;
 			break;
-		case "대리":
+		case "중급강사 평일오전":
 			this.hourTui = 8500 * 2;
 			break;
-		case "과장":
+		case "중급강사 평일오후":
 			this.hourTui = 8500 * 3;
 			break;
-		case "차장":
+		case "고급강사 평일오후":
 			this.hourTui = 8500 * 5;
 			break;
-		case "부장":
+		case "고급강사 주말반":
 			this.hourTui = 8500 * 10;
 			break;
 		default:
