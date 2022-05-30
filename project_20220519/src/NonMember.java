@@ -5,15 +5,15 @@
 
 
 public class NonMember extends People{
-	private int hourTui;		// 시간당 수강비
-	private int workoutTime;	// 운동시간
-	private int overTime;		// 초과 운동시간
-	private int nightTime;		// 개인실이용 운동시간
+	private int hourTui;	     	// 시간당 수강비
+	private int workoutTime;	  // 운동시간
+	private int overTime;		    // 초과 운동시간
+	private int nightTime;		  // 개인실이용 운동시간
 	
-	private int holidayTui;		// 주말이용 수강료
-	private double totalTui;	// 총 수강비
-	private double surtax;		// 부가세 10%
-	private double realTui;		// 실 수강비
+	private int holidayTui;		  // 주말이용 수강료
+	private double totalTui;	  // 총 수강비
+	private double surtax;		  // 부가세 10%
+	private double realTui;		  // 실 수강비
 	
 	public NonMember() {
 		
@@ -61,11 +61,11 @@ public class NonMember extends People{
 	
 	public double getSurtax() {
 		setSurtax();
-		return Math.round(surtax);
+		return Math.round(surtax);                    //부가세10%
 	}
 	
 	public void setRealTui() {
-		realTui = totalTui + surtax;
+		realTui = totalTui + surtax;                  //총 수강료+부가세
 	}
 	
 	public double getRealTui() {

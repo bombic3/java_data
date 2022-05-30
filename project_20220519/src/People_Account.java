@@ -3,9 +3,9 @@
  */
 
 public class People_Account {
-	private String bank_name;		//은행 이름
+	private String bank_name;		    //은행 이름
 	private String account_number;	//계좌번호
-	private String account_owner;	//예금주
+	private String account_owner;  	//예금주
 	
 	public People_Account() {
 		
@@ -17,7 +17,7 @@ public class People_Account {
 		this.setAccount_number(account_number);
 	}
 
-	public String getBank_name() {
+	public String getBank_name() {                //은행명
 		return bank_name;
 	}
 
@@ -25,7 +25,7 @@ public class People_Account {
 		this.bank_name = bank_name;
 	}
 
-	public String getAccount_number() {
+	public String getAccount_number() {           //계좌번호
 		return account_number;
 	}
 
@@ -33,7 +33,7 @@ public class People_Account {
 		this.account_number = account_number;
 	}
 
-	public String getAccount_owner() {
+	public String getAccount_owner() {            //예금주
 		return account_owner;
 	}
 

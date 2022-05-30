@@ -10,20 +10,20 @@
 
 public class People {
 
-	private String name;					 //이름
-	private String membership;				 //회원등급
-	private int birthday;					 //생일
-	private int people_id;					 //회원번호
-	private int start;						 //등록날짜
-	private People_Department department;	 //수강반 이름
+	private String name;					           //이름
+	private String membership;				       //회원등급
+	private int birthday;					           //생일
+	private int people_id;					         //회원번호
+	private int start;						           //등록날짜
+	private People_Department department;	   //수강반 이름
 	
 	//사용자가 수정 가능한 정보
-	private int phone_number;				 //전화번호
-	private String email;					 //email
-	private String address;					 //주소
-	private People_Account account;			 //계좌
+	private int phone_number;				         //전화번호
+	private String email;					           //email
+	private String address;					         //주소
+	private People_Account account;			     //계좌
 	
-	float tui;								 //수강비
+	float tui;								               //수강비
 	
 	public People() {
 		department = new People_Department();
@@ -44,7 +44,7 @@ public class People {
 		account = new People_Account(account_name, account_number, account_owner);
 	}
 
-	public String getName() {
+	public String getName() {                       //이름
 		return name;
 	}
 
@@ -52,7 +52,7 @@ public class People {
 		this.name = name;
 	}
 
-	public String getMembership() {
+	public String getMembership() {                 //회원등급
 		return membership;
 	}
 
@@ -60,7 +60,7 @@ public class People {
 		this.membership = membership;
 	}
 
-	public String getEmail() {
+	public String getEmail() {                      //email
 		return email;
 	}
 
@@ -68,7 +68,7 @@ public class People {
 		this.email = email;
 	}
 
-	public String getAddress() {
+	public String getAddress() {                    //주소
 		return address;
 	}
 
@@ -76,7 +76,7 @@ public class People {
 		this.address = address;
 	}
 
-	public String getDepartmentName() {
+	public String getDepartmentName() {             //수강반 이름
 		return department.getName();
 	}
 
@@ -84,15 +84,15 @@ public class People {
 		this.department.setName(departmentName);
 	}
 	
-	public int getDepartmentCode() {
+	public int getDepartmentCode() {                //수강반 번호
 		return department.getCode();
 	}
 	
-	public void setDepartmentCode(int code) {
+	public void setDepartmentCode(int code) {       
 		department.setCode(code);
 	}
 
-	public int getPhone_number() {
+	public int getPhone_number() {                  //번호
 		return phone_number;
 	}
 
@@ -100,7 +100,7 @@ public class People {
 		this.phone_number = phone_number;
 	}
 
-	public int getPeople_id() {
+	public int getPeople_id() {                     //회원번호
 		return people_id;
 	}
 
@@ -108,7 +108,7 @@ public class People {
 		this.people_id = people_id;
 	}
 
-	public int getBirthday() {
+	public int getBirthday() {                      //생일
 		return birthday;
 	}
 
@@ -116,7 +116,7 @@ public class People {
 		this.birthday = birthday;
 	}
 
-	public int getStart() {
+	public int getStart() {                         //등록날짜
 		return start;
 	}
 
@@ -124,7 +124,7 @@ public class People {
 		this.start = start;
 	}
 	
-	public String getAccountName() {
+	public String getAccountName() {                //은행명
 		return account.getBank_name();
 	}
 	
@@ -132,7 +132,7 @@ public class People {
 		account.setBank_name(name);
 	}
 	
-	public String getAccountOwner() {
+	public String getAccountOwner() {              //예금주 
 		return account.getAccount_owner();
 	}
 	
@@ -140,7 +140,7 @@ public class People {
 		account.setAccount_owner(owner);
 	}
 	
-	public String getAccountNumber() {
+	public String getAccountNumber() {             //계좌번호
 		return account.getAccount_number();
 	}
 	

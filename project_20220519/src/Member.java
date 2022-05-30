@@ -36,27 +36,27 @@ public class Member extends People{
 		return baseTui;
 	}
 
-	// 회원등급별 추가 수강료 = 기본수강비*퍼센트  비회원 0% 초급강사 평일오전 15%   중급강사 평일오전 30%    중급강사 평일오후 40%   고급강사 평일오후 50%   고급강사 주말반 60%
+	// 회원등급별 추가 수강료 = 기본수강비*퍼센트             
 	public void setGradeTui() { 
 		String position = super.getMembership(); // getMembership() 회원등급 받아오기
 		switch(position) {
 		case "비회원":
-			this.gradeTui = (int)(this.baseTui*0.00);
+			this.gradeTui = (int)(this.baseTui*0.00);    //비회원 0%
 			break;
 		case "초급강사 평일오전":
-			this.gradeTui = (int)(this.baseTui*0.15);
+			this.gradeTui = (int)(this.baseTui*0.15);    //초급강사 평일오전 15%
 			break;
 		case "중급강사 평일오전":
-			this.gradeTui = (int)(this.baseTui*0.30);
+			this.gradeTui = (int)(this.baseTui*0.30);    //중급강사 평일오전 30%
 			break;
 		case "중급강사 평일오후":
-			this.gradeTui = (int)(this.baseTui*0.40);
+			this.gradeTui = (int)(this.baseTui*0.40);    //중급강사 평일오후 40%
 			break;
 		case "고급강사 평일오후":
-			this.gradeTui = (int)(this.baseTui*0.50);
+			this.gradeTui = (int)(this.baseTui*0.50);    //고급강사 평일오후 50% 
 			break;
 		case "고급강사 주말반":
-			this.gradeTui = (int)(this.baseTui*0.60);
+			this.gradeTui = (int)(this.baseTui*0.60);    //고급강사 주말반 60%
 			break;
 		default:
 			System.out.println("잘못 입력하셨습니다.");   
@@ -73,22 +73,22 @@ public class Member extends People{
 		String position = super.getMembership(); //getMembership() 강사등급 받아오기
 		switch(position) {
 		case "비회원":
-			this.hourTui = 8500;
+			this.hourTui = 8500;                         
 			break;
 		case "초급강사 평일오전":
-			this.hourTui = 8500 * 1.5;
+			this.hourTui = 8500 * 1.5;                   //초급강사 평일오전 시간당*1.5
 			break;
 		case "중급강사 평일오전":
-			this.hourTui = 8500 * 2;
+			this.hourTui = 8500 * 2;                     //중급강사 평일오전 시간당*2
 			break;
 		case "중급강사 평일오후":
-			this.hourTui = 8500 * 3;
+			this.hourTui = 8500 * 3;                     //중급강사 평일오후 시간당*3
 			break;
 		case "고급강사 평일오후":
-			this.hourTui = 8500 * 5;
+			this.hourTui = 8500 * 5;                     //고급강사 평일오후 시간당*5
 			break;
 		case "고급강사 주말반":
-			this.hourTui = 8500 * 10;
+			this.hourTui = 8500 * 10;                     //고급강사 주말반 시간당*10
 			break;
 		default:
 			System.out.println("잘못 입력하셨습니다.");
@@ -110,23 +110,24 @@ public class Member extends People{
 	}
 
 	public double getTotal() {
-		totalTui = Math.round(this.baseTui + this.gradeTui + this.nightTui * nightTime + this.hourTui * overTime);
+		totalTui = Math.round(this.baseTui + this.gradeTui
+				+ this.nightTui * nightTime + this.hourTui * overTime);
 		return totalTui;
 	}
 	
 	public double getSurtax() {
-		surtax = totalTui*0.1;
+		surtax = totalTui*0.1;                          //부가세 10%
 		return surtax;
 	}
 	
 	//실질적으로 최종 급여를 계산해주는 부분
 	public double getRealTui() {
 		this.setBaseTui(baseTui);
-//		this.setGradeTui();
+		this.setGradeTui();
 		this.setNightTui(hourTui);
-//		this.sethourTui();
+		this.sethourTui();
 		
-		this.realTui = totalTui + surtax;
+		this.realTui = totalTui + surtax;                //총 수강료+부가세
 		return realTui;
 	}
 

@@ -17,7 +17,7 @@ public class People_Department {
 		this.setName(name); 
 	}
 
-	public int getCode() {
+	public int getCode() {                //수강실 번호
 		return code;
 	}
 
@@ -25,7 +25,7 @@ public class People_Department {
 		this.code = code;
 	}
 
-	public String getName() {
+	public String getName() {             //수강반 이름
 		return name;
 	}
 

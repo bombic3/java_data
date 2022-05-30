@@ -22,7 +22,7 @@ public class Day {
 	public void setMonth(int month) {this.month = month;}
 	public void setDate(int date) {this.date = date;}
 	
-	public void set(int tear, int month, int date) {
+	public void set(int year, int month, int date) {
 		this.year = year;
 		this.month = month;
 		this.date = date;
@@ -49,4 +49,5 @@ public class Day {
 		return String.format("%04d년 %02d월 %02d일(%s)",
 				year, month, date, wd[dayOfWeek()]);
 	}
+	
 }

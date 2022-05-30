@@ -23,11 +23,11 @@ public class MainRun {
 			
 			if(ID.equals("0")) {
 				System.out.println("프로그램 종료..");
-				System.exit(-1);
+				System.exit(-1);                    //0을 누르면 프로그램 종료
 			}
 			
 			System.out.print("PW : ");
-			int PW = sc.nextInt();
+			int PW = sc.nextInt();                //비밀번호 기입
 			
 			
 			int result = administrator.check(ID, PW);
@@ -56,17 +56,17 @@ public class MainRun {
 		while(true) {
 			System.out.println("1.조회 2.수정 3.종료");
 			choice = sc.nextInt();
-			if(choice==1) {
+			if(choice==1) {            //1을 누르면 조회
 				user.print();
 			}
-			else if(choice==2) {
+			else if(choice==2) {       //2를 누르면 수정
 				user.edit();
 			}
-			else if(choice==3) {
+			else if(choice==3) {       //3을 누르면 종료
 				break;
 			}
 			else {
-				System.out.println("잘못 된 입력입니다.");
+				System.out.println("잘못 된 입력입니다.");    //그 외의 값을 입력 시
 			}
 		}
 	}
@@ -83,25 +83,25 @@ public class MainRun {
 					System.out.println("1.회원추가 2.전체조회 3.검색 4.수정 5.삭제 6.종료");
 					choice = sc.nextInt();
 					if(choice==1) {
-						administrator.addMember();
+						administrator.addMember();        //1을 누르면 정회원추가
 					}
 					else if(choice==2) {
-						administrator.printMember();
+						administrator.printMember();      //2를 누르면 전체조회
 					}
 					else if(choice==3) {
-						administrator.searchMember();
+						administrator.searchMember();     //3을 누르면 정회원검색
 					}
 					else if(choice==4) {
-						administrator.editMember();
+						administrator.editMember();       //4를 누르면 정회원수정
 					}
 					else if(choice==5) {
-						administrator.deleteMember();
+						administrator.deleteMember();     //5를 누르면 정회원삭제
 					}
-					else if(choice==6) {
+					else if(choice==6) {                //6을 누르면 종료
 						break;
 					}
 					else {
-						System.out.println("잘못 된 입력입니다.");
+						System.out.println("잘못 된 입력입니다.");   //그 외의 값을 입력 시
 					}
 				}
 			}
@@ -110,26 +110,26 @@ public class MainRun {
 					System.out.println("1.회원추가 2.전체조회 3.검색 4.수정 5.삭제 6.종료");
 					choice = sc.nextInt();
 					if(choice==1) {
-						administrator.addNonMember();
-					}
+						administrator.addNonMember();      //1을 누르면 비회원추가
+					} 
 					else if(choice==2) {
-						administrator.printNonMember();
+						administrator.printNonMember();    //2를 누르면 전체조회
 					}
 					else if(choice==3) {
 						
-						administrator.searchNonMember();
+						administrator.searchNonMember();   //3을 누르면 비회원검색
 					}
 					else if(choice==4) {
-						administrator.editNonMember();
+						administrator.editNonMember();     //4를 누르면 비회원수정
 					}
 					else if(choice==5) {
-						administrator.deleteNonMember();
+						administrator.deleteNonMember();   //5를 누르면 비회원삭제
 					}
-					else if(choice==6) {
+					else if(choice==6) {                 //6을 누르면 종료
 						break;
 					}
 					else {
-						System.out.println("잘못 된 입력입니다.");
+						System.out.println("잘못 된 입력입니다.");    //그 외의 값을 입력 시
 					}
 				}
 			}
